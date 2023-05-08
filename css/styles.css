@@ -268,7 +268,7 @@ img {
 .section-title {
   margin-bottom: 72px;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
   color: var(--main-color);
@@ -393,7 +393,10 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
 }
 .footer-logo {
   margin-bottom: 16px;
