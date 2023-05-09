@@ -110,6 +110,11 @@ img {
   letter-spacing: 0.02em;
 }
 
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--hover-color);
+}
+
 .address {
   font-style: normal;
 }
