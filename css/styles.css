@@ -115,6 +115,35 @@ img {
   color: var(--hover-color);
 }
 
+.current-page-link {
+position: relative;
+}
+
+.menu-item-current-page::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-color);
+  position: absolute;
+  bottom: -1px;
+
+}
+
+/* .menu-item:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-color);
+  position: absolute;
+  bottom: -1px;
+  opacity: 1;
+
+} */
+
 .address {
   font-style: normal;
 }
@@ -373,6 +402,11 @@ img {
   color: var(--hover-color);
 }
 
+.customer-icon:hover,
+.customer-icon:focus {
+  fill: currentColor;
+}
+
 .customers-list-link {
   width: 100%;
   height: 100%;
@@ -508,6 +542,24 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.porfolio-image {
+  position: relative;
+}
+.porfolio-image::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: var(--brand-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.portfolio-list-item:hover .porfolio-image::before,
+.portfolio-list-item:focus .porfolio-image::before {
+  opacity: 1;
+}
+
 .portfolio-list-link {
   display: block;
 }
@@ -520,4 +572,26 @@ img {
 
 .portfolio-card-name {
   margin-bottom: 8px;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  height: 584px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
 }
